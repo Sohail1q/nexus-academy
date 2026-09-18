@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import {
   Globe,
-  Github,
+  GitBranch,
   Cloud,
   CheckCircle2,
   Copy,
-  Download,
   X,
-  ExternalLink,
   Server,
-  FileCode,
   Layers,
 } from 'lucide-react';
 
@@ -79,7 +76,7 @@ export const DeploymentGuideModal: React.FC<DeploymentGuideModalProps> = ({
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            <Github className="w-4 h-4" /> GitHub Repository / Pages
+            <GitBranch className="w-4 h-4" /> GitHub Repository / Pages
           </button>
 
           <button
@@ -150,7 +147,7 @@ export const DeploymentGuideModal: React.FC<DeploymentGuideModalProps> = ({
                   <button
                     onClick={() =>
                       copyToClipboard(
-                        'git init\ngit add .\ngit commit -m "Initial commit of Nexus Academy"\ngit branch -M main\ngit remote add origin https://github.com/YOUR_USERNAME/nexus-academy.git\ngit push -u origin main',
+                        'git init\ngit add .\ngit commit -m "Initial commit of Nexus Academy"\ngit branch -M main\ngit remote add origin https://github.com/Sohail1q/nexus-academy.git\ngit push -u origin main',
                         'git'
                       )
                     }
@@ -165,7 +162,7 @@ export const DeploymentGuideModal: React.FC<DeploymentGuideModalProps> = ({
                   <p className="text-emerald-400">git commit -m "Initial commit of Nexus Academy"</p>
                   <p className="text-slate-400"># 2. Link your remote repository and push</p>
                   <p className="text-emerald-400">git branch -M main</p>
-                  <p className="text-emerald-400">git remote add origin https://github.com/YOUR_USERNAME/nexus-academy.git</p>
+                  <p className="text-emerald-400">git remote add origin https://github.com/Sohail1q/nexus-academy.git</p>
                   <p className="text-emerald-400">git push -u origin main</p>
                 </div>
               </div>
