@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="crestGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#880026"/>
+      <stop offset="100%" stop-color="#550016"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Crown on Top -->
+  <g filter="url(#shadow)">
+    <path d="M 180 130 L 210 70 L 250 110 L 290 70 L 320 130 C 275 140 225 140 180 130 Z" fill="url(#crestGrad)" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="210" cy="65" r="7" fill="url(#goldGrad)"/>
+    <circle cx="250" cy="55" r="9" fill="url(#goldGrad)"/>
+    <circle cx="290" cy="65" r="7" fill="url(#goldGrad)"/>
+    <circle cx="180" cy="125" r="6" fill="url(#goldGrad)"/>
+    <circle cx="320" cy="125" r="6" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Shield Crest Background -->
+  <path d="M 130 180 C 130 140 250 120 250 120 C 250 120 370 140 370 180 L 370 320 C 370 390 250 450 250 450 C 250 450 130 390 130 320 Z" 
+        fill="url(#crestGrad)" stroke="url(#goldGrad)" stroke-width="8" filter="url(#shadow)"/>
+
+  <!-- Inner White Shield -->
+  <path d="M 150 190 C 150 160 250 145 250 145 C 250 145 350 160 350 190 L 350 310 C 350 370 250 420 250 420 C 250 420 150 370 150 310 Z" 
+        fill="#ffffff" stroke="#e2e8f0" stroke-width="3"/>
+
+  <!-- Subtitle Arc Text -->
+  <text x="250" y="178" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="800" fill="#64748b" text-anchor="middle" letter-spacing="2">
+    CONNECTING YOU TO SUCCESS
+  </text>
+
+  <!-- Academy Temple/Building Icon -->
+  <g fill="url(#crestGrad)">
+    <!-- Roof Triangle -->
+    <polygon points="250,195 180,240 320,240"/>
+    <!-- Pediment Architrave -->
+    <rect x="180" y="242" width="140" height="8" rx="2"/>
+    <!-- 4 Pillars -->
+    <rect x="195" y="253" width="16" height="50" rx="3"/>
+    <rect x="225" y="253" width="16" height="50" rx="3"/>
+    <rect x="259" y="253" width="16" height="50" rx="3"/>
+    <rect x="289" y="253" width="16" height="50" rx="3"/>
+    <!-- Base -->
+    <rect x="180" y="306" width="140" height="8" rx="2"/>
+    <rect x="170" y="316" width="160" height="9" rx="3"/>
+  </g>
+
+  <!-- Bottom Banner / Ribbon -->
+  <g filter="url(#shadow)">
+    <path d="M 80 375 L 125 355 L 125 410 L 80 395 Z" fill="#550016"/>
+    <path d="M 420 375 L 375 355 L 375 410 L 420 395 Z" fill="#550016"/>
+    <rect x="110" y="350" width="280" height="60" rx="10" fill="url(#crestGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+    <text x="250" y="380" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3">
+      NEXUS
+    </text>
+    <text x="250" y="398" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#fef08a" text-anchor="middle" letter-spacing="1">
+      ENGLISH, COMPUTER &amp; TUITION ACADEMY
+    </text>
+  </g>
+
+  <!-- Year 2026 Badge -->
+  <circle cx="250" cy="432" r="14" fill="url(#goldGrad)"/>
+  <text x="250" y="436" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="900" fill="#550016" text-anchor="middle">
+    2026
+  </text>
+</svg>

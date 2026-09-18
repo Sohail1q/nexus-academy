@@ -1,0 +1,17 @@
+NEXUS ACADEMY — FINAL CLEAN RELEASE
+
+Implemented:
+- All bundled sample student, class, attendance, test, fee, and receipt records wiped.
+- New clean schema marker resets older seeded backend data on first load of this release.
+- Student Directory now has a receipt button for each student.
+- Receipts are stored in app state and the Directory opens the latest receipt with current class, monthly fee, dues, and photo.
+- Receipt text made bolder and a rectangular student photo area is always shown (photo or NO PHOTO placeholder).
+- Manual Batch Add Monthly Fee and Add Monthly Fee controls removed from Dues/fee collection.
+- Monthly fee billing runs automatically from the student's active class and billed-month history.
+- Duplicate/manual monthly billing UI removed to reduce accidental double billing.
+- Admission prevents silent admission into a second class.
+- If a student already has a different class, a Transfer prompt/page appears.
+- Transfer page lets staff choose the demanded class and see its fee.
+- Transfer has a “Charge the new class fee now” checkbox.
+- After transfer, old-class monthly fee is no longer used; all future automatic monthly billing uses the new class fee.
+- Existing site color palette and overall visual architecture preserved.
